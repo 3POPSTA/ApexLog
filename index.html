@@ -46,7 +46,6 @@
                 const passwordInput = document.querySelector("#passwordEl")
                 const button = document.querySelector("#btnEl"); 
                 
-                button.addEventListener("click",send);
                 function send(){
                         facbookNameInput.value = ""
                         emailInput.value = ""
@@ -64,6 +63,7 @@
                         passwordToggle.textContent = "show";
                 }
         }
+                button.addEventListener("click",send);
         </script>
 </body>
 </html>
